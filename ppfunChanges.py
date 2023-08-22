@@ -116,7 +116,7 @@ if __name__ == '__main__':
                     sys.exit()
                 translucent = PIL.Image.new("RGB", im1.size, (0, 0, 0))
                 mask = PIL.ImageChops.difference(im1, im2).convert("L")
-                im2.putalpha(32)
+                im2.putalpha(24)
                 im2.paste(translucent, (0, 0), mask)
                 im2.save("difference.png")
         
