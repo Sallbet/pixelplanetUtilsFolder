@@ -3,50 +3,62 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: src/controls/keypress.js:41
+#: src/controls/keypress.js:99
 #, javascript-format
 msgid "Switched to ${ canvasName }"
 msgstr ""
 
-#: src/controls/keypress.js:64
+#: src/controls/keypress.js:184
 msgid "Grid ON"
 msgstr ""
 
-#: src/controls/keypress.js:65
+#: src/controls/keypress.js:185
 msgid "Grid OFF"
 msgstr ""
 
-#: src/controls/keypress.js:75
+#: src/controls/keypress.js:195
 msgid "Pixel Notify ON"
 msgstr ""
 
-#: src/controls/keypress.js:76
+#: src/controls/keypress.js:196
 msgid "Pixel Notify OFF"
 msgstr ""
 
-#: src/controls/keypress.js:81
+#: src/controls/keypress.js:201
 msgid "Muted Sound"
 msgstr ""
 
-#: src/controls/keypress.js:82
+#: src/controls/keypress.js:202
 msgid "Unmuted Sound"
 msgstr ""
 
-#: src/components/CoordinatesBox.jsx:28
+#: src/components/CoordinatesBox.jsx:39
 #: src/components/GetIID.jsx:51
-#: src/controls/keypress.js:88
+#: src/controls/keypress.js:211
 msgid "Copied!"
 msgstr ""
 
-#: src/controls/keypress.js:94
-msgid "Show Hidden Canvases"
+#: src/controls/keypress.js:217
+msgid "Overlay ON"
 msgstr ""
 
-#: src/controls/keypress.js:95
-msgid "Hide Hidden Canvases"
+#: src/controls/keypress.js:218
+msgid "Overlay OFF"
+msgstr ""
+
+#: src/components/windows/Help.jsx:51
+#: src/controls/keypress.js:224
+msgid "Easter Egg ON"
+msgstr ""
+
+#: src/components/windows/Help.jsx:50
+#: src/controls/keypress.js:225
+msgid "Easter Egg OFF"
 msgstr ""
 
 #: src/ui/PixelTransferController.js:70
+#: src/ui/templateLoader.js:230
+#: src/ui/templateLoader.js:256
 msgid "Error :("
 msgstr ""
 
@@ -171,12 +183,20 @@ msgstr ""
 msgid "Error ${ retCode }"
 msgstr ""
 
-#: src/ui/rendererFactory.js:30
+#: src/ui/rendererFactory.js:31
 msgid "Canvas Error"
 msgstr ""
 
-#: src/ui/rendererFactory.js:31
+#: src/ui/rendererFactory.js:32
 msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
+msgstr ""
+
+#: src/ui/templateLoader.js:231
+msgid "Can not export more than 20 or no template!"
+msgstr ""
+
+#: src/ui/templateLoader.js:257
+msgid "Can not import more than 20 or no template!"
 msgstr ""
 
 #: src/components/BanInfo.jsx:136
@@ -194,6 +214,7 @@ msgid "try again after ${ ti }min"
 msgstr ""
 
 #: src/store/actions/fetch.js:70
+#, javascript-format
 msgid "Connection error ${ code } :("
 msgstr ""
 
@@ -230,9 +251,10 @@ msgstr ""
 msgid "You have new messages in chat"
 msgstr ""
 
-#: src/components/Converter.jsx:561
-#: src/components/CoordinatesBox.jsx:31
-#: src/components/ModWatchtools.jsx:371
+#: src/components/Converter.jsx:566
+#: src/components/CoordinatesBox.jsx:42
+#: src/components/ModWatchtools.jsx:384
+#: src/components/ModWatchtools.jsx:402
 msgid "Copy to Clipboard"
 msgstr ""
 
@@ -269,17 +291,17 @@ msgstr ""
 msgid "Open Menu"
 msgstr ""
 
-#: src/components/HistorySelect.jsx:144
+#: src/components/HistorySelect.jsx:146
 msgid "Loading"
 msgstr ""
 
-#: src/components/HistorySelect.jsx:145
+#: src/components/HistorySelect.jsx:147
 msgid "Select Date above"
 msgstr ""
 
 #: src/components/Admintools.jsx:103
 #: src/components/ModCanvastools.jsx:222
-#: src/components/ModWatchtools.jsx:118
+#: src/components/ModWatchtools.jsx:120
 #: src/components/Window.jsx:157
 #: src/components/Window.jsx:260
 #: src/components/contextmenus/ChannelContextMenu.jsx:59
@@ -310,27 +332,15 @@ msgstr ""
 msgid "Resize"
 msgstr ""
 
-#: src/components/buttons/GlobeButton.jsx:34
-msgid "Globe View"
-msgstr ""
-
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Close Palette"
-msgstr ""
-
-#: src/components/buttons/PalselButton.jsx:30
-msgid "Open Palette"
+#: src/components/BanInfo.jsx:75
+#: src/components/buttons/HelpButton.jsx:20
+#: src/components/windows/index.js:13
+msgid "Help"
 msgstr ""
 
 #: src/components/buttons/SettingsButton.jsx:21
 #: src/components/windows/index.js:14
 msgid "Settings"
-msgstr ""
-
-#: src/components/BanInfo.jsx:75
-#: src/components/buttons/HelpButton.jsx:20
-#: src/components/windows/index.js:13
-msgid "Help"
 msgstr ""
 
 #: src/components/buttons/LogInButton.jsx:20
@@ -340,6 +350,42 @@ msgstr ""
 
 #: src/components/buttons/DownloadButton.jsx:36
 msgid "Make Screenshot"
+msgstr ""
+
+#: src/components/buttons/GlobeButton.jsx:34
+msgid "Globe View"
+msgstr ""
+
+#: src/components/buttons/PencilButton.jsx:34
+msgid "History Pencil ON"
+msgstr ""
+
+#: src/components/buttons/PencilButton.jsx:41
+msgid "Overlay Pencil ON"
+msgstr ""
+
+#: src/components/buttons/PencilButton.jsx:68
+msgid "Enable Pencil"
+msgstr ""
+
+#: src/components/buttons/PencilButton.jsx:72
+msgid "Disable Pencil"
+msgstr ""
+
+#: src/components/buttons/PencilButton.jsx:76
+msgid "Disable History Pencil"
+msgstr ""
+
+#: src/components/buttons/PencilButton.jsx:80
+msgid "Disable Overlay Pencil"
+msgstr ""
+
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Close Palette"
+msgstr ""
+
+#: src/components/buttons/PalselButton.jsx:30
+msgid "Open Palette"
 msgstr ""
 
 #: src/components/windows/index.js:16
@@ -379,7 +425,7 @@ msgid "Unknown Captcha Error"
 msgstr ""
 
 #: src/components/BanInfo.jsx:80
-#: src/components/Captcha.jsx:77
+#: src/components/Captcha.jsx:79
 #: src/components/ChangeMail.jsx:72
 #: src/components/ChangeName.jsx:58
 #: src/components/ChangePassword.jsx:79
@@ -396,6 +442,7 @@ msgstr ""
 #: src/components/ChangePassword.jsx:115
 #: src/components/DeleteAccount.jsx:68
 #: src/components/GlobalCaptcha.jsx:80
+#: src/components/TemplateItemEdit.jsx:184
 #: src/components/windows/ForgotPassword.jsx:89
 #: src/components/windows/Register.jsx:133
 msgid "Cancel"
@@ -406,7 +453,7 @@ msgid "Send"
 msgstr ""
 
 #: src/components/BanInfo.jsx:66
-msgid "You are banned. You think it is unjustifed? Check out the "
+msgid "You are banned. You think it is unjustified? Check out the "
 msgstr ""
 
 #: src/components/BanInfo.jsx:76
@@ -447,104 +494,11 @@ msgstr ""
 msgid "Why?"
 msgstr ""
 
-#: src/components/windows/Settings.jsx:86
-msgid "Show Grid"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:91
-msgid "Turn on grid to highlight pixel borders."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:94
-msgid "Show Pixel Activity"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:99
-msgid "Show circles where pixels are placed."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:102
-msgid "Disable Game Sounds"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:108
-msgid "All sound effects will be disabled."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:112
-msgid ""
-"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
-"have some privacy feature blocking us?"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:118
-msgid "Enable chat notifications"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:122
-msgid "Play a sound when new chat messages arrive"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:125
-msgid "Auto Zoom In"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:130
-msgid ""
-"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
-"small."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:133
-msgid "Compact Palette"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:138
-msgid "Display Palette in a compact form that takes less screen space."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:141
-msgid "Potato Mode"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:145
-msgid "For when you are playing on a potato."
-msgstr ""
-
-#: src/components/Converter.jsx:376
-#: src/components/windows/Settings.jsx:148
-msgid "Light Grid"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:152
-msgid "Show Grid in white instead of black."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:156
-msgid "Historical View"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:161
-msgid "Check out past versions of the canvas."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:166
-msgid "Themes"
-msgstr ""
-
-#: src/components/windows/Settings.jsx:171
-msgid "How pixelplanet should look like."
-msgstr ""
-
-#: src/components/windows/Settings.jsx:178
-msgid "Select Language"
-msgstr ""
-
-#: src/components/windows/Help.jsx:42
+#: src/components/windows/Help.jsx:66
 msgid "Place color pixels on a large canvas with other players online!"
 msgstr ""
 
-#: src/components/windows/Help.jsx:43
+#: src/components/windows/Help.jsx:67
 msgid ""
 "Our main canvas is a huge worldmap, you can place wherever you like, but "
 "you will have to wait a specific Cooldown between pixels. You can check out "
@@ -554,39 +508,39 @@ msgid ""
 "and 7s on already set pixels."
 msgstr ""
 
-#: src/components/windows/Help.jsx:47
+#: src/components/windows/Help.jsx:71
 msgid ""
 "Higher zoomlevels take some time to update, the 3D globe gets updated at "
 "least once per day."
 msgstr ""
 
-#: src/components/windows/Help.jsx:48
+#: src/components/windows/Help.jsx:72
 msgid "Have fun!"
 msgstr ""
 
-#: src/components/windows/Help.jsx:50
+#: src/components/windows/Help.jsx:74
 msgid "recommended"
 msgstr ""
 
-#: src/components/windows/Help.jsx:51
+#: src/components/windows/Help.jsx:75
 msgid "Source on "
 msgstr ""
 
-#: src/components/windows/Help.jsx:52
+#: src/components/windows/Help.jsx:76
 msgid "Map Data"
 msgstr ""
 
-#: src/components/windows/Help.jsx:53
+#: src/components/windows/Help.jsx:77
 msgid ""
 "The bare map data that we use, together with converted OpenStreetMap tiles "
 "for orientation, can be downloaded from mega.nz here: "
 msgstr ""
 
-#: src/components/windows/Help.jsx:55
+#: src/components/windows/Help.jsx:79
 msgid "Banned? Detected as Proxy?"
 msgstr ""
 
-#: src/components/windows/Help.jsx:57
+#: src/components/windows/Help.jsx:81
 #, javascript-format
 msgid ""
 "If you got detected as proxy, but you are none, or think that you got "
@@ -594,123 +548,136 @@ msgid ""
 "to ${ mailLink } and include the following IID:"
 msgstr ""
 
-#: src/components/windows/Help.jsx:60
-#: src/components/windows/Help.jsx:77
+#: src/components/windows/Help.jsx:84
+#: src/components/windows/Help.jsx:101
 msgid "Controls"
 msgstr ""
 
-#: src/components/windows/Help.jsx:62
+#: src/components/windows/Help.jsx:86
 msgid "Click a color in palette to select it"
 msgstr ""
 
-#: src/components/windows/Help.jsx:63
+#: src/components/windows/Help.jsx:87
 #, javascript-format
 msgid "Press ${ bindG } to toggle grid"
 msgstr ""
 
-#: src/components/windows/Help.jsx:64
+#: src/components/windows/Help.jsx:88
+#, javascript-format
 msgid "Press ${ bindX } to toggle showing of pixel activity"
 msgstr ""
 
-#: src/components/windows/Help.jsx:65
+#: src/components/windows/Help.jsx:89
 #, javascript-format
 msgid "Press ${ bindH } to toggle historical view"
 msgstr ""
 
-#: src/components/windows/Help.jsx:66
+#: src/components/windows/Help.jsx:90
+#, javascript-format
 msgid "Press ${ bindR } to copy coordinates"
 msgstr ""
 
-#: src/components/windows/Help.jsx:67
+#: src/components/windows/Help.jsx:91
 #, javascript-format
 msgid "Press ${ bindQ } or ${ bindE } to zoom"
 msgstr ""
 
-#: src/components/windows/Help.jsx:68
-#: src/components/windows/Help.jsx:79
+#: src/components/windows/Help.jsx:92
+#: src/components/windows/Help.jsx:103
 #, javascript-format
 msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
 msgstr ""
 
-#: src/components/windows/Help.jsx:69
-#: src/components/windows/Help.jsx:80
+#: src/components/windows/Help.jsx:93
+#: src/components/windows/Help.jsx:104
 #, javascript-format
 msgid "Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
 msgstr ""
 
-#: src/components/windows/Help.jsx:70
+#: src/components/windows/Help.jsx:94
+#, javascript-format
 msgid "Drag ${ mouseSymbol } mouse or ${ touchSymbol } pan to move"
 msgstr ""
 
-#: src/components/windows/Help.jsx:71
+#: src/components/windows/Help.jsx:95
 #, javascript-format
 msgid "Scroll ${ mouseSymbol } mouse wheel or ${ touchSymbol } pinch to zoom"
 msgstr ""
 
-#: src/components/windows/Help.jsx:72
+#: src/components/windows/Help.jsx:96
+#, javascript-format
 msgid "Hold left ${ bindShift } for placing while moving mouse"
 msgstr ""
 
-#: src/components/windows/Help.jsx:73
+#: src/components/windows/Help.jsx:97
 #, javascript-format
 msgid ""
 "Hold right ${ bindShift } for placing while moving mouse according to "
 "historical view"
 msgstr ""
 
-#: src/components/windows/Help.jsx:74
-#: src/components/windows/Help.jsx:85
+#: src/components/windows/Help.jsx:98
+#: src/components/windows/Help.jsx:109
 #, javascript-format
 msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
 msgstr ""
 
-#: src/components/windows/Help.jsx:75
-#: src/components/windows/Help.jsx:87
+#: src/components/windows/Help.jsx:99
+#: src/components/windows/Help.jsx:111
+#, javascript-format
 msgid ""
 "Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
 "select current hovering color"
 msgstr ""
 
-#: src/components/windows/Help.jsx:81
-msgid "Press ${ bindE } and ${ bindC } to fly up and down"
+#: src/components/windows/Help.jsx:105
+#, javascript-format
+msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
 msgstr ""
 
-#: src/components/windows/Help.jsx:82
+#: src/components/windows/Help.jsx:106
 #, javascript-format
 msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
 msgstr ""
 
-#: src/components/windows/Help.jsx:83
+#: src/components/windows/Help.jsx:107
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
 "button and drag to zoom"
 msgstr ""
 
-#: src/components/windows/Help.jsx:84
+#: src/components/windows/Help.jsx:108
+#, javascript-format
 msgid "${ mouseSymbol } Right click and drag mouse to pan"
 msgstr ""
 
-#: src/components/windows/Help.jsx:86
+#: src/components/windows/Help.jsx:110
 #, javascript-format
 msgid ""
 "${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a "
 "pixel"
 msgstr ""
 
-#: src/components/windows/Help.jsx:91
+#: src/components/windows/Help.jsx:115
 msgid ""
 "We thanks those artists very much, they offered their palettes to the "
 "public on"
 msgstr ""
 
-#: src/components/windows/Help.jsx:94
+#: src/components/windows/Help.jsx:118
 #, javascript-format
 msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
 msgstr ""
 
-#: src/components/windows/Help.jsx:97
+#: src/components/windows/Help.jsx:121
+#, javascript-format
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
+msgstr ""
+
+#: src/components/windows/Help.jsx:124
+#, javascript-format
+msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
 msgstr ""
 
 #: src/components/windows/UserArea.jsx:36
@@ -736,6 +703,107 @@ msgstr ""
 
 #: src/components/windows/UserArea.jsx:78
 msgid "Consider joining us on Guilded:"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:91
+msgid "Show Grid"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:96
+msgid "Turn on grid to highlight pixel borders."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:99
+msgid "Show Pixel Activity"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:104
+msgid "Show circles where pixels are placed."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:107
+msgid "Always show Movement Controls"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:112
+msgid "Always show movement control buttons"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:115
+msgid "Disable Game Sounds"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:121
+msgid "All sound effects will be disabled."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:125
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:131
+msgid "Enable chat notifications"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:135
+msgid "Play a sound when new chat messages arrive"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:138
+msgid "Auto Zoom In"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:143
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:146
+msgid "Compact Palette"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:151
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:154
+msgid "Potato Mode"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:158
+msgid "For when you are playing on a potato."
+msgstr ""
+
+#: src/components/Converter.jsx:381
+#: src/components/windows/Settings.jsx:161
+msgid "Light Grid"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:165
+msgid "Show Grid in white instead of black."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:169
+msgid "Historical View"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:174
+msgid "Check out past versions of the canvas."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:179
+msgid "Themes"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:184
+msgid "How pixelplanet should look like."
+msgstr ""
+
+#: src/components/windows/Settings.jsx:191
+msgid "Select Language"
 msgstr ""
 
 #: src/components/windows/Register.jsx:87
@@ -772,10 +840,10 @@ msgstr ""
 
 #: src/components/Admintools.jsx:154
 #: src/components/Admintools.jsx:238
-#: src/components/ModCanvastools.jsx:302
-#: src/components/ModCanvastools.jsx:382
-#: src/components/ModCanvastools.jsx:455
-#: src/components/ModCanvastools.jsx:546
+#: src/components/ModCanvastools.jsx:305
+#: src/components/ModCanvastools.jsx:390
+#: src/components/ModCanvastools.jsx:467
+#: src/components/ModCanvastools.jsx:562
 #: src/components/ModIIDtools.jsx:135
 #: src/components/windows/ForgotPassword.jsx:84
 #: src/components/windows/Register.jsx:127
@@ -784,34 +852,39 @@ msgstr ""
 
 #: src/components/windows/CanvasSelect.jsx:29
 msgid ""
-"Select the canvas you want to use.  Every canvas is unique and has "
-"different palettes, cooldown and requirements.  Archive of closed canvases "
-"can be accessed here:"
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archive of removed canvases can be accessed here:"
 msgstr ""
 
 #: src/components/windows/CanvasSelect.jsx:37
 msgid "Archive"
 msgstr ""
 
-#: src/components/windows/Archive.jsx:16
+#: src/components/windows/CanvasSelect.jsx:59
+msgid "Retired Canvases (history only)"
+msgstr ""
+
+#: src/components/windows/Archive.jsx:9
 msgid ""
 "While we tend to not delete canvases, some canvases are started for fun or "
 "as a request by users who currently like a meme. Those canvases can get "
 "boring after a while and after weeks of no major change and if they really "
-"aren't worth being kept active, we decide to remove them."
+"aren't worth being kept active."
 msgstr ""
 
-#: src/components/windows/Archive.jsx:18
+#: src/components/windows/Archive.jsx:10
 msgid ""
-"Here we collect those canvases to archive them in a proper way (which is "
-"currently just one)."
+"Here we collect removed canvases to archive them in a proper way. Which is "
+"currently only one."
 msgstr ""
 
-#: src/components/windows/Archive.jsx:20
+#: src/components/windows/Archive.jsx:12
 msgid "Political Compass Canvas"
 msgstr ""
 
-#: src/components/windows/Archive.jsx:27
+#: src/components/windows/Archive.jsx:21
 msgid ""
 "This canvas got requested during a time of political conflicts on the main "
 "Earth canvas. It was a 1024x1024 representation of the political compass "
@@ -819,19 +892,11 @@ msgid ""
 "remained active for months till it got shut down on November 30th."
 msgstr ""
 
-#: src/components/windows/Archive.jsx:28
+#: src/components/windows/Archive.jsx:22
 msgid ""
 "We decided to archive it as a timelapse with lossless encoded webm. Taking "
 "a screenshot from the timelapse results in a perfect 1:1 representation of "
 "how the canvas was at that time."
-msgstr ""
-
-#: src/components/windows/ForgotPassword.jsx:58
-msgid "Sent you a mail with instructions to reset your password."
-msgstr ""
-
-#: src/components/windows/ForgotPassword.jsx:69
-msgid "Enter your mail address and we will send you a new password:"
 msgstr ""
 
 #: src/components/windows/Chat.jsx:180
@@ -850,36 +915,44 @@ msgstr ""
 msgid "Channel settings"
 msgstr ""
 
+#: src/components/windows/ForgotPassword.jsx:58
+msgid "Sent you a mail with instructions to reset your password."
+msgstr ""
+
+#: src/components/windows/ForgotPassword.jsx:69
+msgid "Enter your mail address and we will send you a new password:"
+msgstr ""
+
 #: src/components/Captcha.jsx:51
-#: src/components/Captcha.jsx:105
+#: src/components/Captcha.jsx:107
 msgid "Could not load captcha"
 msgstr ""
 
-#: src/components/Captcha.jsx:69
+#: src/components/Captcha.jsx:71
 msgid "Type the characters from the following image:"
 msgstr ""
 
-#: src/components/Captcha.jsx:72
+#: src/components/Captcha.jsx:74
 msgid "Tip: Not case-sensitive; I and l are the same"
 msgstr ""
 
-#: src/components/Captcha.jsx:114
+#: src/components/Captcha.jsx:116
 msgid "Load Captcha"
 msgstr ""
 
-#: src/components/Captcha.jsx:119
+#: src/components/Captcha.jsx:121
 msgid "Click to Load Captcha"
 msgstr ""
 
-#: src/components/Captcha.jsx:124
+#: src/components/Captcha.jsx:126
 msgid "Can't read? Reload:"
 msgstr ""
 
-#: src/components/Captcha.jsx:128
+#: src/components/Captcha.jsx:130
 msgid "Reload"
 msgstr ""
 
-#: src/components/Captcha.jsx:138
+#: src/components/Captcha.jsx:140
 msgid "Enter Characters"
 msgstr ""
 
@@ -931,13 +1004,6 @@ msgstr ""
 msgid "Password must be shorter than 60 characters."
 msgstr ""
 
-#: src/components/ChangeMail.jsx:91
-#: src/components/ChangeName.jsx:68
-#: src/components/ChangePassword.jsx:109
-#: src/components/LanguageSelect.jsx:80
-msgid "Save"
-msgstr ""
-
 #: src/components/GetIID.jsx:44
 msgid "Get IID"
 msgstr ""
@@ -971,7 +1037,7 @@ msgid "Register"
 msgstr ""
 
 #: src/components/UserAreaContent.jsx:62
-msgid "Todays Placed Pixels"
+msgid "Today Placed Pixels"
 msgstr ""
 
 #: src/components/UserAreaContent.jsx:66
@@ -1015,82 +1081,82 @@ msgstr ""
 msgid "Social Settings"
 msgstr ""
 
-#: src/components/Converter.jsx:190
+#: src/components/Converter.jsx:191
 #: src/components/ModCanvastools.jsx:226
 msgid "Choose Canvas"
 msgstr ""
 
-#: src/components/Converter.jsx:216
+#: src/components/Converter.jsx:218
 msgid "Palette Download"
 msgstr ""
 
-#: src/components/Converter.jsx:218
+#: src/components/Converter.jsx:220
 #, javascript-format
 msgid "Palette for ${ gimpLink }"
 msgstr ""
 
-#: src/components/Converter.jsx:236
+#: src/components/Converter.jsx:241
 msgid "Image Converter"
 msgstr ""
 
-#: src/components/Converter.jsx:237
+#: src/components/Converter.jsx:242
 msgid "Convert an image to canvas colors"
 msgstr ""
 
-#: src/components/Converter.jsx:256
+#: src/components/Converter.jsx:261
 msgid "Choose Strategy"
 msgstr ""
 
-#: src/components/Converter.jsx:294
+#: src/components/Converter.jsx:299
 msgid "Serpentine"
 msgstr ""
 
-#: src/components/Converter.jsx:296
+#: src/components/Converter.jsx:301
 msgid "Minimum Color Distance"
 msgstr ""
 
-#: src/components/Converter.jsx:323
+#: src/components/Converter.jsx:328
 msgid "Calculate like GIMP"
 msgstr ""
 
-#: src/components/Converter.jsx:327
+#: src/components/Converter.jsx:332
 msgid "Choose Color Mode"
 msgstr ""
 
-#: src/components/Converter.jsx:356
+#: src/components/Converter.jsx:361
 msgid "Add Grid (uncheck if you need a 1:1 template)"
 msgstr ""
 
-#: src/components/Converter.jsx:378
-#: src/components/Converter.jsx:394
+#: src/components/Converter.jsx:383
+#: src/components/Converter.jsx:399
 msgid "Offset"
 msgstr ""
 
-#: src/components/Converter.jsx:423
+#: src/components/Converter.jsx:428
 msgid "Scale Image"
 msgstr ""
 
-#: src/components/Converter.jsx:434
+#: src/components/Converter.jsx:439
 msgid "Width"
 msgstr ""
 
-#: src/components/Converter.jsx:465
+#: src/components/Converter.jsx:470
 msgid "Height"
 msgstr ""
 
-#: src/components/Converter.jsx:504
+#: src/components/Converter.jsx:509
 msgid "Keep Ratio"
 msgstr ""
 
-#: src/components/Converter.jsx:517
+#: src/components/Converter.jsx:522
 msgid "Anti Aliasing"
 msgstr ""
 
-#: src/components/Converter.jsx:531
+#: src/components/Converter.jsx:536
 msgid "Reset"
 msgstr ""
 
-#: src/components/Converter.jsx:549
+#: src/components/Converter.jsx:554
 msgid "Download Template"
 msgstr ""
 
@@ -1126,6 +1192,66 @@ msgstr ""
 
 #: src/components/Rankings.jsx:286
 msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
+msgstr ""
+
+#: src/components/ChangeMail.jsx:91
+#: src/components/ChangeName.jsx:68
+#: src/components/ChangePassword.jsx:109
+#: src/components/LanguageSelect.jsx:79
+#: src/components/TemplateItemEdit.jsx:212
+msgid "Save"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:52
+msgid "Templates"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:56
+msgid ""
+"Tired of always spaming one single color? Want to create art instead, but "
+"you have to count pixels from some other image? Templates can help you with "
+"that! Templates can show as overlay and you can draw over them. One pixel "
+"on the template, should be one pixel on the canvas."
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:60
+msgid "Enable Overlay"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:65
+msgid "Show templates as overlays ingame."
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:68
+msgid "Small Pixels Overlay"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:74
+msgid "Show overlay as small individual pixels (will only show in high zoomlevels)."
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:81
+msgid "Overlay Opacity"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:95
+msgid "Opacity of Overlay in percent."
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:134
+msgid "Cancel adding Template"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:141
+msgid "Add Template"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:158
+msgid "Export enabled templates"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:167
+msgid "Import templates"
 msgstr ""
 
 #: src/components/CanvasItem.jsx:29
@@ -1170,6 +1296,8 @@ msgid "Top 10 Daily Ranking"
 msgstr ""
 
 #: src/components/CanvasItem.jsx:64
+#: src/components/TemplateItem.jsx:60
+#: src/components/TemplateItemEdit.jsx:163
 msgid "Dimensions"
 msgstr ""
 
@@ -1189,7 +1317,7 @@ msgstr ""
 msgid "Countries by Pixels Today"
 msgstr ""
 
-#: src/core/chartSettings.js:352
+#: src/core/chartSettings.js:351
 msgid "Total Pixels placed per day"
 msgstr ""
 
@@ -1215,10 +1343,6 @@ msgstr ""
 msgid "Click here to request a new verification mail."
 msgstr ""
 
-#: src/components/ChangeName.jsx:64
-msgid "New Username"
-msgstr ""
-
 #: src/components/ChangePassword.jsx:21
 msgid "Passwords do not match."
 msgstr ""
@@ -1237,6 +1361,10 @@ msgstr ""
 
 #: src/components/ChangePassword.jsx:103
 msgid "Confirm New Password"
+msgstr ""
+
+#: src/components/ChangeName.jsx:64
+msgid "New Username"
 msgstr ""
 
 #: src/components/ChangeMail.jsx:59
@@ -1323,99 +1451,51 @@ msgid "File"
 msgstr ""
 
 #: src/components/ModCanvastools.jsx:269
-msgid "Coordinates in X_Y format:"
+msgid "Coordinates:"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:307
+#: src/components/ModCanvastools.jsx:310
 msgid "Pixel Protection"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:309
+#: src/components/ModCanvastools.jsx:314
 msgid ""
-"Set protection of areas         (if you need finer grained control,         "
-"use protect with image upload and alpha layers)"
+"Set protection of areas (if you need finer grained control, use protect "
+"with image upload and alpha layers)"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:330
-#: src/components/ModCanvastools.jsx:403
-#: src/components/ModCanvastools.jsx:486
-#: src/components/ModWatchtools.jsx:174
+#: src/components/ModCanvastools.jsx:334
+#: src/components/ModCanvastools.jsx:411
+#: src/components/ModCanvastools.jsx:498
+#: src/components/ModWatchtools.jsx:176
 msgid "Top-left corner"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:347
-#: src/components/ModCanvastools.jsx:420
-#: src/components/ModCanvastools.jsx:503
-#: src/components/ModWatchtools.jsx:191
+#: src/components/ModCanvastools.jsx:353
+#: src/components/ModCanvastools.jsx:430
+#: src/components/ModCanvastools.jsx:517
+#: src/components/ModWatchtools.jsx:195
 msgid "Bottom-right corner"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:388
+#: src/components/ModCanvastools.jsx:396
 msgid "Rollback to Date"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:390
+#: src/components/ModCanvastools.jsx:398
 msgid "Rollback an area of the canvas to a set date (00:00 UTC)"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:461
+#: src/components/ModCanvastools.jsx:473
 msgid "Canvas Cleaner"
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:463
+#: src/components/ModCanvastools.jsx:475
 msgid "Apply a filter to clean trash in large canvas areas."
 msgstr ""
 
-#: src/components/ModCanvastools.jsx:564
+#: src/components/ModCanvastools.jsx:580
 msgid "Stop Cleaner"
-msgstr ""
-
-#: src/components/ModWatchtools.jsx:48
-msgid "Interval is invalid"
-msgstr ""
-
-#: src/components/ModWatchtools.jsx:122
-msgid "Check who placed in an area"
-msgstr ""
-
-#: src/components/ModWatchtools.jsx:123
-msgid "Canvas"
-msgstr ""
-
-#: src/components/ModWatchtools.jsx:142
-msgid "Interval"
-msgstr ""
-
-#: src/components/ModWatchtools.jsx:157
-msgid "IID (optional)"
-msgstr ""
-
-#: src/components/ModWatchtools.jsx:236
-msgid "Get Pixels"
-msgstr ""
-
-#: src/components/ModWatchtools.jsx:267
-msgid "Get Users"
-msgstr ""
-
-#: src/components/ModIIDtools.jsx:20
-msgid "You must enter a duration"
-msgstr ""
-
-#: src/components/ModIIDtools.jsx:24
-msgid "You must enter an IID"
-msgstr ""
-
-#: src/components/ModIIDtools.jsx:53
-msgid "IID Actions"
-msgstr ""
-
-#: src/components/ModIIDtools.jsx:80
-msgid "Enter Reason"
-msgstr ""
-
-#: src/components/ModIIDtools.jsx:97
-msgid "(0 = infinite)"
 msgstr ""
 
 #: src/components/Admintools.jsx:109
@@ -1450,8 +1530,79 @@ msgstr ""
 msgid "User Name"
 msgstr ""
 
-#: src/components/contextmenus/ChannelContextMenu.jsx:46
-msgid "Mute"
+#: src/components/ModWatchtools.jsx:48
+msgid "Interval is invalid"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:124
+msgid "Check who placed in an area"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:125
+#: src/components/TemplateItem.jsx:54
+#: src/components/TemplateItemEdit.jsx:122
+msgid "Canvas"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:144
+msgid "Interval"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:159
+msgid "IID (optional)"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:243
+msgid "Get Pixels"
+msgstr ""
+
+#: src/components/ModWatchtools.jsx:275
+msgid "Get Users"
+msgstr ""
+
+#: src/components/ModIIDtools.jsx:20
+msgid "You must enter a duration"
+msgstr ""
+
+#: src/components/ModIIDtools.jsx:24
+msgid "You must enter an IID"
+msgstr ""
+
+#: src/components/ModIIDtools.jsx:53
+msgid "IID Actions"
+msgstr ""
+
+#: src/components/ModIIDtools.jsx:80
+msgid "Enter Reason"
+msgstr ""
+
+#: src/components/ModIIDtools.jsx:97
+msgid "(0 = infinite)"
+msgstr ""
+
+#: src/components/TemplateItem.jsx:57
+#: src/components/TemplateItemEdit.jsx:141
+msgid "Coordinates"
+msgstr ""
+
+#: src/components/TemplateItem.jsx:71
+msgid "Edit"
+msgstr ""
+
+#: src/components/TemplateItem.jsx:81
+msgid "Go to"
+msgstr ""
+
+#: src/components/TemplateItemEdit.jsx:97
+msgid "Select File"
+msgstr ""
+
+#: src/components/TemplateItemEdit.jsx:120
+msgid "Template Name"
+msgstr ""
+
+#: src/components/TemplateItemEdit.jsx:177
+msgid "Delete"
 msgstr ""
 
 #: src/components/contextmenus/UserContextMenu.jsx:49
@@ -1466,70 +1617,84 @@ msgstr ""
 msgid "Block"
 msgstr ""
 
-#: src/components/windows/Help.jsx:15
-#: src/components/windows/Settings.jsx:87
+#: src/components/contextmenus/ChannelContextMenu.jsx:46
+msgid "Mute"
+msgstr ""
+
+#: src/components/windows/Help.jsx:19
+#: src/components/windows/Settings.jsx:92
 msgctxt "keybinds"
 msgid "G"
 msgstr ""
 
-#: src/components/windows/Help.jsx:16
-#: src/components/windows/Settings.jsx:95
+#: src/components/windows/Help.jsx:20
+#: src/components/windows/Settings.jsx:100
 msgctxt "keybinds"
 msgid "X"
 msgstr ""
 
-#: src/components/windows/Settings.jsx:103
-msgctxt "keybinds"
-msgid "M"
-msgstr ""
-
-#: src/components/windows/Help.jsx:17
-#: src/components/windows/Settings.jsx:158
+#: src/components/windows/Help.jsx:21
+#: src/components/windows/Settings.jsx:171
 msgctxt "keybinds"
 msgid "H"
 msgstr ""
 
-#: src/components/windows/Help.jsx:18
+#: src/components/windows/Help.jsx:22
 msgctxt "keybinds"
 msgid "R"
 msgstr ""
 
-#: src/components/windows/Help.jsx:19
+#: src/components/windows/Help.jsx:23
 msgctxt "keybinds"
 msgid "Q"
 msgstr ""
 
-#: src/components/windows/Help.jsx:20
+#: src/components/windows/Help.jsx:24
 msgctxt "keybinds"
 msgid "E"
 msgstr ""
 
-#: src/components/windows/Help.jsx:21
+#: src/components/windows/Help.jsx:25
 msgctxt "keybinds"
 msgid "W"
 msgstr ""
 
-#: src/components/windows/Help.jsx:22
+#: src/components/windows/Help.jsx:26
 msgctxt "keybinds"
 msgid "A"
 msgstr ""
 
-#: src/components/windows/Help.jsx:23
+#: src/components/windows/Help.jsx:27
 msgctxt "keybinds"
 msgid "S"
 msgstr ""
 
-#: src/components/windows/Help.jsx:24
+#: src/components/windows/Help.jsx:28
 msgctxt "keybinds"
 msgid "D"
 msgstr ""
 
-#: src/components/windows/Help.jsx:31
+#: src/components/windows/Help.jsx:35
 msgctxt "keybinds"
 msgid "Shift"
 msgstr ""
 
-#: src/components/windows/Help.jsx:32
+#: src/components/windows/Help.jsx:36
 msgctxt "keybinds"
 msgid "C"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:108
+msgctxt "keybinds"
+msgid "N"
+msgstr ""
+
+#: src/components/windows/Settings.jsx:116
+msgctxt "keybinds"
+msgid "M"
+msgstr ""
+
+#: src/components/TemplateSettings.jsx:61
+msgctxt "keybinds"
+msgid "T"
 msgstr ""

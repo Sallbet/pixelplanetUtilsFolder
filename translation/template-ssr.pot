@@ -12,7 +12,7 @@ msgid "Your country is temporary muted from this chat channel"
 msgstr ""
 
 #: src/core/ChatProvider.js:439
-msgid "You are permanently muted, join our guilded to apppeal the mute"
+msgid "You are permanently muted, join our guilded to appeal the mute"
 msgstr ""
 
 #: src/core/ChatProvider.js:441
@@ -29,6 +29,7 @@ msgid "You are muted for another ${ timeMin } minutes"
 msgstr ""
 
 #: src/core/ChatProvider.js:450
+#, javascript-format
 msgid "You are muted for another ${ ttl } seconds"
 msgstr ""
 
@@ -41,19 +42,19 @@ msgstr ""
 msgid "You don't have access to this channel"
 msgstr ""
 
-#: src/core/ChatProvider.js:488
+#: src/core/ChatProvider.js:490
 msgid "Your mail has to be verified in order to chat"
 msgstr ""
 
-#: src/core/ChatProvider.js:498
+#: src/core/ChatProvider.js:500
 msgid "You can't send a message this long :("
 msgstr ""
 
-#: src/core/ChatProvider.js:502
+#: src/core/ChatProvider.js:504
 msgid "Please use int channel"
 msgstr ""
 
-#: src/core/ChatProvider.js:510
+#: src/core/ChatProvider.js:512
 msgid "Stop flooding."
 msgstr ""
 
@@ -74,42 +75,42 @@ msgid "User doesn't exist in our database :("
 msgstr ""
 
 #: src/routes/reset_password.js:89
-msgid "Passowrd successfully changed."
+msgid "Password successfully changed."
 msgstr ""
 
 #: src/routes/reset_password.js:108
 msgid "Invalid url :( Please check your mail again."
 msgstr ""
 
-#: src/ssr/Globe.jsx:32
+#: src/ssr/Globe.jsx:37
 msgid "PixelPlanet.Fun 3DGlobe"
 msgstr ""
 
-#: src/ssr/Globe.jsx:33
+#: src/ssr/Globe.jsx:38
 msgid "A 3D globe of our whole map"
 msgstr ""
 
-#: src/ssr/Globe.jsx:46
+#: src/ssr/Globe.jsx:51
 msgid "Double click on globe to go back."
 msgstr ""
 
-#: src/ssr/Globe.jsx:47
+#: src/ssr/Globe.jsx:52
 msgid "Loading..."
 msgstr ""
 
-#: src/ssr/PopUp.jsx:58
+#: src/ssr/PopUp.jsx:47
 msgid "ppfun"
 msgstr ""
 
-#: src/ssr/PopUp.jsx:59
+#: src/ssr/PopUp.jsx:48
 msgid "PixelPlanet.Fun PopUp"
 msgstr ""
 
-#: src/ssr/Main.jsx:67
+#: src/ssr/Main.jsx:58
 msgid "PixelPlanet.Fun"
 msgstr ""
 
-#: src/ssr/Main.jsx:68
+#: src/ssr/Main.jsx:59
 msgid "Place color pixels on an map styled canvas with other players online"
 msgstr ""
 
@@ -219,31 +220,7 @@ msgstr ""
 msgid "You are not banned"
 msgstr ""
 
-#: src/routes/api/auth/logout.js:11
-msgid "You are not even logged in."
-msgstr ""
-
-#: src/routes/api/auth/delete_account.js:55
-#: src/routes/api/auth/logout.js:20
-msgid "Server error when logging out."
-msgstr ""
-
-#: src/routes/api/auth/verify.js:26
-#: src/routes/api/auth/verify.js:35
-msgid "Mail verification"
-msgstr ""
-
-#: src/routes/api/auth/verify.js:27
-msgid "You are now verified :)"
-msgstr ""
-
-#: src/routes/api/auth/verify.js:35
-msgid ""
-"Your mail verification code is invalid or already expired :(, please "
-"request a new one."
-msgstr ""
-
-#: src/routes/api/auth/change_mail.js:21
+#: src/routes/api/auth/change_mail.js:22
 #: src/routes/api/auth/register.js:24
 msgid "This email provider is not allowed"
 msgstr ""
@@ -280,16 +257,48 @@ msgstr ""
 msgid "Failed to establish session after register :("
 msgstr ""
 
-#: src/routes/api/auth/change_mail.js:43
+#: src/routes/api/auth/verify.js:26
+#: src/routes/api/auth/verify.js:35
+msgid "Mail verification"
+msgstr ""
+
+#: src/routes/api/auth/verify.js:27
+msgid "You are now verified :)"
+msgstr ""
+
+#: src/routes/api/auth/verify.js:35
+msgid ""
+"Your mail verification code is invalid or already expired :(, please "
+"request a new one."
+msgstr ""
+
+#: src/routes/api/auth/logout.js:11
+msgid "You are not even logged in."
+msgstr ""
+
+#: src/routes/api/auth/delete_account.js:65
+#: src/routes/api/auth/logout.js:20
+msgid "Server error when logging out."
+msgstr ""
+
+#: src/routes/api/auth/change_mail.js:44
 #: src/routes/api/auth/change_passwd.js:34
-#: src/routes/api/auth/delete_account.js:35
+#: src/routes/api/auth/delete_account.js:36
 msgid "You are not authenticated."
 msgstr ""
 
-#: src/routes/api/auth/change_mail.js:52
+#: src/routes/api/auth/change_mail.js:53
 #: src/routes/api/auth/change_passwd.js:43
-#: src/routes/api/auth/delete_account.js:45
+#: src/routes/api/auth/delete_account.js:55
 msgid "Incorrect password!"
+msgstr ""
+
+#: src/routes/api/auth/delete_account.js:46
+msgid "Muted users can not delete their account."
+msgstr ""
+
+#: src/routes/api/auth/change_mail.js:62
+msgid "Muted users can not do this."
 msgstr ""
 
 #: src/ssr/RedirectionPage.jsx:19
@@ -305,80 +314,99 @@ msgstr ""
 msgid "Or ${ clickHere } to go back to pixelplanet"
 msgstr ""
 
-#: src/canvasesDesc.js:19
+#: src/canvasesDesc.js:20
 msgid "Earth"
 msgstr ""
 
-#: src/canvasesDesc.js:20
+#: src/canvasesDesc.js:21
 msgid "Moon"
 msgstr ""
 
-#: src/canvasesDesc.js:21
+#: src/canvasesDesc.js:22
 msgid "3D Canvas"
 msgstr ""
 
-#: src/canvasesDesc.js:22
+#: src/canvasesDesc.js:23
 msgid "Coronavirus"
 msgstr ""
 
-#: src/canvasesDesc.js:23
+#: src/canvasesDesc.js:24
 msgid "PixelZone"
 msgstr ""
 
-#: src/canvasesDesc.js:24
+#: src/canvasesDesc.js:25
 msgid "PixelCanvas"
 msgstr ""
 
-#: src/canvasesDesc.js:25
+#: src/canvasesDesc.js:26
 msgid "1bit"
 msgstr ""
 
-#: src/canvasesDesc.js:26
+#: src/canvasesDesc.js:27
 msgid "Top10"
 msgstr ""
 
+#: src/canvasesDesc.js:28
+msgid "Thoia"
+msgstr ""
+
 #: src/canvasesDesc.js:29
+msgid "2bit"
+msgstr ""
+
+#: src/canvasesDesc.js:32
 msgid "Our main canvas, a huge map of the world. Place everywhere you like"
 msgstr ""
 
-#: src/canvasesDesc.js:30
+#: src/canvasesDesc.js:33
 msgid ""
 "Moon canvas. Safe space for art. No flags or large text (unless part of "
 "art) or art larger than 1.5k x 1.5k pixels."
 msgstr ""
 
-#: src/canvasesDesc.js:31
+#: src/canvasesDesc.js:34
 msgid "Place Voxels on a 3D canvas with others"
 msgstr ""
 
-#: src/canvasesDesc.js:32
+#: src/canvasesDesc.js:35
 msgid "Special canvas to spread awareness of SARS-CoV2"
 msgstr ""
 
-#: src/canvasesDesc.js:33
+#: src/canvasesDesc.js:36
 msgid "Mirror of PixelZone"
 msgstr ""
 
-#: src/canvasesDesc.js:34
+#: src/canvasesDesc.js:37
 msgid "Mirror of PixelCanvas"
 msgstr ""
 
-#: src/canvasesDesc.js:35
+#: src/canvasesDesc.js:38
 msgid "Black and White canvas"
 msgstr ""
 
-#: src/canvasesDesc.js:36
+#: src/canvasesDesc.js:39
 msgid ""
 "A canvas for the most active players from the the previous day. Daily "
 "ranking updates at 00:00 UTC."
 msgstr ""
 
+#: src/canvasesDesc.js:40
+msgid ""
+"Thoia World Canvas. Advanced fictional worldbuilding and arts. Abandon the "
+"old world and all it entails."
+msgstr ""
+
+#: src/canvasesDesc.js:41
+msgid "Only four colors. Same rules as moon."
+msgstr ""
+
 #: src/core/MailProvider.js:66
 #, javascript-format
-msgid "Welcome ${ name } to PixelPlanet, plese verify your mail"
+msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
 msgstr ""
 
 #: src/core/MailProvider.js:67
+#, javascript-format
 msgid "Hello ${ name }"
 msgstr ""
 
@@ -398,7 +426,7 @@ msgid "Or by copying following url:"
 msgstr ""
 
 #: src/core/MailProvider.js:69
-msgid "Have fun and don't hesitate to contact us if you encouter any problems :)"
+msgid "Have fun and don't hesitate to contact us if you encounter any problems :)"
 msgstr ""
 
 #: src/core/MailProvider.js:70
